@@ -1,3 +1,13 @@
+
+/*
+ * @author:  Diego Patricio Gutierrez Lopez Cano
+ * @date:    25/enero/2018
+ * @file:    tarea1.c  funciones.h
+ * @brief:   Este programa recibe cuatro numero desde terminal, y tienes que
+ *          manjeralos como binario o hexadecimal, y desplegar el numero de
+ *          de la poscicion que desee el usuario.
+ *
+ */
 #include "funciones.h"
 
 // Prototipos de funciones

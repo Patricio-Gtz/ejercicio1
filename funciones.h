@@ -1,7 +1,15 @@
+/*
+ * @author:  Diego Patricio Gutierrez Lopez Cano
+ * @date:    25/enero/2018
+ * @file:    funciones.h
+ * @brief:   Funciones para el programa de tarea1, que incluye imprimir y
+ *           mascara
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
+// Prototipos de funciones
 void imprimir(int nums[4]);
 unsigned short int mascara(int op);
 
@@ -15,6 +23,7 @@ void imprimir(int nums[4]) {
   int i, n = 4, opcion;
   unsigned short int numeroNuevo, d, masc, temp;
 
+  // Junta los numeros del array a un solo numero
   for (i = 0; i < 4; i++) {
     numeroNuevo += (nums[i] << (n - 1) * 4);
     n--;
@@ -33,9 +42,11 @@ void imprimir(int nums[4]) {
 }
 
 /**
- * [mascara description]
- * @param  op [description]
- * @return    [description]
+ * Esta funcion ayuda a que se filtren los numeros para que no te despliegue
+ * solo el numero que deseas, y no todos los demas.
+ * @param   int op  Recibe poscicion deseada por el usuario
+ * @return    regresa un unsigned short int que es la posicion deseada por el
+ *            usuario, pero en hexadecimal y filtrado
  */
 unsigned short int mascara(int op) {
 
